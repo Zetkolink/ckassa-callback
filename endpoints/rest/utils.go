@@ -1,8 +1,8 @@
 package rest
 
 import (
-	"../../pkg/errors"
-	"../../pkg/render"
+	"ckassa-callback/pkg/errors"
+	"ckassa-callback/pkg/render"
 	"encoding/json"
 	"net/http"
 )

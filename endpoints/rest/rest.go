@@ -1,10 +1,10 @@
 package rest
 
 import (
-	"../../models"
-	"../../pkg/errors"
-	"../../pkg/logger"
-	"../../pkg/render"
+	"ckassa-callback/models"
+	"ckassa-callback/pkg/errors"
+	"ckassa-callback/pkg/logger"
+	"ckassa-callback/pkg/render"
 	"context"
 	"github.com/gorilla/mux"
 	"net/http"

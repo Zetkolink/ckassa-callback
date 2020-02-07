@@ -1,7 +1,7 @@
 package paymentCallback
 
 import (
-	"../../models"
+	"ckassa-callback/models"
 	"context"
 	"database/sql"
 	"github.com/jinzhu/gorm"

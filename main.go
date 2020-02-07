@@ -1,13 +1,13 @@
 package main
 
 import (
-	"./dataStore/sqlDb"
-	"./endpoints/rest"
-	"./pkg/graceful"
-	"./pkg/logger"
-	"./pkg/middlewares"
-	"./usecases/cardCallback"
-	"./usecases/paymentCallback"
+	"ckassa-callback/dataStore/sqlDb"
+	"ckassa-callback/endpoints/rest"
+	"ckassa-callback/pkg/graceful"
+	"ckassa-callback/pkg/logger"
+	"ckassa-callback/pkg/middlewares"
+	"ckassa-callback/usecases/cardCallback"
+	"ckassa-callback/usecases/paymentCallback"
 	"fmt"
 	"github.com/gorilla/mux"
 	"github.com/spf13/viper"

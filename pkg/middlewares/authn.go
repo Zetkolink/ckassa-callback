@@ -1,9 +1,9 @@
 package middlewares
 
 import (
-	"../../pkg/errors"
-	"../../pkg/logger"
-	"../../pkg/render"
+	"ckassa-callback/pkg/errors"
+	"ckassa-callback/pkg/logger"
+	"ckassa-callback/pkg/render"
 	"context"
 	"net/http"
 )

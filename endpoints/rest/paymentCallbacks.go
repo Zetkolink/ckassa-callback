@@ -1,8 +1,8 @@
 package rest
 
 import (
-	"../../models"
-	"../../pkg/logger"
+	"ckassa-callback/models"
+	"ckassa-callback/pkg/logger"
 	"github.com/gorilla/mux"
 	"net/http"
 )

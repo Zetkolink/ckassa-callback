@@ -1,7 +1,7 @@
 package middlewares
 
 import (
-	"../../pkg/logger"
+	"ckassa-callback/pkg/logger"
 	"encoding/json"
 	"net/http"
 )

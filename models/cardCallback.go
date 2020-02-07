@@ -10,5 +10,5 @@ type CardCallback struct {
 }
 
 func (c CardCallback) TableName() string {
-	return "cashless.card_callbacks"
+	return "cashless.cards"
 }
