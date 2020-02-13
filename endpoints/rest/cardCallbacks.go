@@ -12,7 +12,7 @@ func addCardCallback(router *mux.Router, cCall cardCallbacks, lg logger.Logger) 
 	pc.cc = cCall
 	pc.Logger = lg
 
-	router.HandleFunc("/pay/ckassa", pc.post).Methods(http.MethodPost)
+	router.HandleFunc("/pay/ckassa/card-reg", pc.post).Methods(http.MethodPost)
 }
 
 type cardCallbacksController struct {
