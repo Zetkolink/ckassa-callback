@@ -8,6 +8,7 @@ import (
 	"ckassa-callback/pkg/middlewares"
 	"ckassa-callback/usecases/cardCallback"
 	"ckassa-callback/usecases/paymentCallback"
+	"flag"
 	"fmt"
 	"github.com/gorilla/mux"
 	"github.com/spf13/viper"
@@ -16,9 +17,14 @@ import (
 	"time"
 )
 
-func main() {
+func init() {
+	flag.Parse()
+}
 
-	cfg := loadConfig()
+var configPath = flag.String("config", ".", "config path")
+
+func main() {
+	cfg := loadConfig(*configPath)
 
 	lg := logger.New(os.Stderr, cfg.LogLevel, cfg.LogFormat)
 
@@ -70,8 +76,8 @@ type Db struct {
 	Host string `yaml:"host"`
 }
 
-func loadConfig() *Config {
-	viper.AddConfigPath(".")
+func loadConfig(path string) *Config {
+	viper.AddConfigPath(path)
 	viper.SetConfigName("config")
 	err := viper.ReadInConfig()
 	if err != nil {
